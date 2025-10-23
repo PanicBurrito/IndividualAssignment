@@ -1,7 +1,7 @@
 import random
 from time import *
 
-n = 1024
+n = 256
 
 A = [[random.random() for _ in range(n)] for _ in range(n)]
 B = [[random.random() for _ in range(n)] for _ in range(n)]
@@ -12,7 +12,7 @@ start = time()
 for i in range(n):
     for j in range(n):
         for k in range(n):
-            C[i][j] += A[i][k] * B[k][k]
+            C[i][j] += A[i][k] * B[k][j]
 
 end = time()
 
