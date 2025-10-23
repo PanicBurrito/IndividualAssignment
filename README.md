@@ -1,7 +1,5 @@
-# Matrix Benchmarking – Quick Start
+Benchmark quick Start
 
-## Run benchmark (creates CSV only)
-```bash
 python3 tools/benchmark.py
 # writes: tools/results.csv
 
