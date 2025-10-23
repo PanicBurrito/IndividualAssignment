@@ -1,33 +1,26 @@
-# macOS
 .DS_Store
 
-# General
 *.log
 *.tmp
 *.swp
 
-# Git
 .env
 .venv/
 venv/
 env/
 
-# Python
 __pycache__/
 *.pyc
 *.pyo
 .pytest_cache/
 .mypy_cache/
 
-# Java (no Maven/Gradle here)
 *.class
 out/
 bin/
-# IntelliJ
 .idea/
 *.iml
 
-# CLion / CMake
 cmake-build-*/
 CMakeFiles/
 CMakeCache.txt
@@ -35,5 +28,3 @@ Makefile
 cmake_install.cmake
 compile_commands.json
 
-# VSCode (if used)
-.vscode/
