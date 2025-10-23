@@ -2,9 +2,9 @@ import subprocess, sys, csv, time, os, signal
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-C_DIR = ROOT / "c"
-JAVA_DIR = ROOT / "java" / "src"
-PY_DIR = ROOT / "python"
+C_DIR = ROOT / "code" / "c"
+JAVA_DIR = ROOT / "code" / "java" / "src"
+PY_DIR = ROOT / "code" / "python"
 
 SIZES = [10, 100, 1000, 10000]
 TIMEOUT = 300
@@ -55,7 +55,7 @@ def main():
     build_java()
     ensure_numpy()
 
-    results_path = ROOT / "tools" / "results.csv"
+    results_path = ROOT / "output" / "results.csv"
     results_path.parent.mkdir(parents=True, exist_ok=True)
 
     with open(results_path, "w", newline="") as f:

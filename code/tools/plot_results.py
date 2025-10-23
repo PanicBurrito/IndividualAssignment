@@ -2,7 +2,7 @@ import csv, sys
 import matplotlib.pyplot as plt
 from collections import defaultdict
 
-path = sys.argv[1] if len(sys.argv) > 1 else "tools/results.csv"
+path = sys.argv[1] if len(sys.argv) > 1 else "output/results.csv"
 
 data = defaultdict(list)
 timeouts = defaultdict(list)
@@ -41,5 +41,5 @@ plt.yscale("log")
 plt.grid(True, which="both", linestyle="--", linewidth=0.6)
 plt.legend()
 plt.tight_layout()
-plt.savefig("tools/phase1_runtime.png", dpi=180)
+plt.savefig("output/phase1_runtime.png", dpi=180)
 plt.show()
